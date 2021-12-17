@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-59 || Remove&Add-2 </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <style>
+            #div1{
+                border:2px solid #eb1010;
+                padding:10px;
+            }
+            #p5{
+                color:red;
+            }
+        </style>
+        <script>
+
+            $(function(){
+                $("#btn").click(function () {
+                   /* $("<p>Yeni paragraf</p>").appendTo("#div1");
+                    $("<p>Yeni paragraf</p>").prependTo("#div1");
+                    $("<p>Yeni paragraf</p>").insertAfter("#div1");
+                    $("<p>Yeni paragraf</p>").insertBefore("#div1");
+                    $("<p id='p5'>Yeni paragraf</p>").replaceAll("p");*/
+                    $("p").replaceWith("<p id='p5'>Yeni paragraf</p>");
+                });
+
+        });
+
+        </script>
+        
+    </head>
+    <body> 
+        <div id="div1" class="deneme">
+            <p id="p1">Paragraf 1</p>
+            <p id="p2">Paragraf 2</p>
+            <p id="p3">Paragraf 3</p>
+            <p id="p4">Paragraf 4</p>
+        </div>
+        <br/><br/>
+        <button id="btn">Tıkla</button>
+        
+        </body>
+</html>

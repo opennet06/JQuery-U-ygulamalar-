@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-54 || Mouse&Keyboard |Events</title>
+        <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        #div1{
+            width:100%;
+            height:400px;
+            background-color: yellow;
+        }
+        #div2{
+            width:30%;
+            height:200px;
+            background-color: green;
+        }
+    </style>
+
+    <body> 
+        <div id="div1">
+        <div id="div2">
+
+        </div>
+    </div>
+        <br/>
+    <input id="txt" type="text"/>
+    <br/><br/>
+    <button id="btn">Tıkla</button>
+    <script>
+$(function () {
+    $("#txt").keydown(function (){
+       $("#div1").css("background-color","red");
+   
+    //$("#txt").keypress(function (){
+       // $("#div1").css("background-color","red");
+    });
+    
+   // $("#div1").mouseenter(function (){
+        //$("#div1").css("background-color","red");
+   // });
+    
+    
+    $("#div1").mouseleave(function (){
+        $("#div1").css("background-color","yellow");
+    });
+    
+    });
+    //$("#btn").dblclick(function () {
+       // $("#div1").css("background-color","red");//
+   // });
+
+//});
+    </script>
+        
+        </body>
+</html>

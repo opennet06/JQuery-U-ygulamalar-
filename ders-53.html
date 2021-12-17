@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-53 || JQuery Selector</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <Style>
+            table{
+                border:1px solid black;
+            }
+            tr{text-align:center;
+            }
+            td,th{border:1px solid black;
+                 padding:3px;
+            }
+            
+            
+            </Style>
+    </head>
+    <body>
+         <div>
+        <p id="p1" Class="c1">Parağraf 1 ID : p1 Class : c1</p>
+        <p id="p2" Class="c2">Parağraf 2 ID : p2 Class : c2</p>
+        <p id="p3" Class="c3">Parağraf 3 ID : p3 Class : c3</p>
+        <p id="p4" Class="c4">Parağraf 4 ID : p4 Class : c4</p>
+    </div>
+    <table Cellspacing="0">
+<thead>
+    <tr>
+        <th>Ad/Soyad</th>
+        <th>Yaş</th>
+        <th>Meslek</th>
+    </tr>
+    <tr>
+        <th>Ahmet Yaşar</th>
+        <th>55</th>
+        <th>Serbest</th>
+    </tr>
+    <tr>
+        <th>Mehmet Koşar</th>
+        <th>45</th>
+        <th>Çiftci</th>
+    </tr>
+    <tr>
+        <th>Ali Coşar</th>
+        <th>50</th>
+        <th>Memur</th>
+    </tr>
+    <tr>
+        <th>Veli Taşar</th>
+        <th>60</th>
+        <th>Emekli</th>
+    </tr>
+</thead>
+
+    </table>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+            </ul>
+           
+            <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+            </ul>
+            
+            <a href="ders-52.html" target="blank">Ders 52</a>
+            <br/><br/>
+            checkbox<input id="checkbox1" type="checkbox" checked/>        
+            <button id="btn">Tıkla</button>
+            <button id="btn">Tıkla2</button>
+        <script>
+            var jq=$.noConflict ();
+            jq(function () {
+                jq("#btn").click(function () {
+                    jq("*").css("color","red");
+
+//jq(this).css("color","red")
+                    //jq(".c1").css("color","red");
+                    //jq("#p1").css("color","red");
+    //jq("p").css ("color","red");*//
+
+});
+            });
+
+
+
+        </script>
+        </body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-60 || AddClass&CSS </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <style>
+            #div1{
+                border:2px solid #eb1010;
+                padding:10px;
+            }
+            .red{
+                background-color:red;
+            }
+            .blue{
+                background-color:blue;
+            }
+            .beyazYazi{
+                color:white;
+            }
+        </style>
+        
+        
+        <script>
+
+            $(function(){
+                $("#btn").click(function () {
+                   $("#p1").addClass("blue beyazYazi");
+                   $("#p2").toggleClass("blue beyazYazi");
+                   $("#p3").removeAttr("class");
+                   $("#p4").css("font-size","50px");
+                });
+
+        });
+
+        </script>
+        
+    </head>
+    <body> 
+        <div id="div1" class="deneme">
+            <p id="p1">Paragraf 1</p>
+            <p id="p2">Paragraf 2</p>
+            <p id="p3" class="red">Paragraf 3</p>
+            <p id="p4">Paragraf 4</p>
+        </div>
+        <br/><br/>
+        <button id="btn">Tıkla</button>
+        
+        </body>
+</html>

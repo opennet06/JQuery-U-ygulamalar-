@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-61 || Dimensions </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <style>
+
+            #div1{
+                border:5px solid black;
+                width:400px;
+                height:400px;
+                padding:10px;
+                margin:20px;
+                
+            }
+        </style>
+        
+       
+        
+    </head>
+    <body>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <br/><br/>
+        <button id="btn">Tıkla</button>
+
+        <script>
+
+            $(function(){
+                $("#btn").click(function () {
+               /* var a=$("#div1").width();
+                var b=$("#div1").height();
+                $("#div2").html("Genişlik:" + a + "<br/>Yükseklik:" +b);
+                
+               var a=$("#div1").innerWidth();
+                var b=$("#div1").innerHeight();
+                $("#div2").html("Genişlik:" + a + "<br/>Yükseklik:" +b);*/
+               /* var a=$("#div1").outerWidth();
+                var b=$("#div1").outerHeight();
+                $("#div2").html("Genişlik:" + a + "<br/>Yükseklik:" +b);
+               var a=$("#div1").outerWidth(true);
+                var b=$("#div1").outerHeight(true);
+                $("#div2").html("Genişlik:" + a + "<br/>Yükseklik:" +b);
+*/               $("#div1").width(100);
+                 $("#div1").height(300);
+                /*$("#div2").html("Genişlik:" + a + "<br/>Yükseklik:" +b);
+*/
+            });
+        });
+
+        </script>
+
+
+        
+        </body>
+</html>

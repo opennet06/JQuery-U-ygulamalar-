@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-52 ||JQuery-NoConflict</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+var jq=$.noConflict ();
+            jq(function(){
+                jq("p").click(function () {
+                jq(this).hide();
+
+            });
+        });
+
+        </script>
+        
+    </head>
+    <body> <p>JQuery Öğreniyorum...</p>
+        <p>JQuery Öğreniyorum...</p>
+        <p>JQuery Öğreniyorum...</p>
+        <p>JQuery Öğreniyorum...</p>
+        
+        </body>
+</html>

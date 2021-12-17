@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-69 || Animate </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <style>
+            .deneme{
+                width:200px;
+                height:200px;
+                margin:15px;
+                font-weight:bold;
+                position:relative;
+            
+            }
+        </style>        
+        
+    </head>
+    <body>
+        <div id="div1" class="deneme" style="background-color:gray">Javascript</div>
+        
+        
+        <br/> <br/>
+        <button id="btn">Animate</button>
+        
+
+            
+                        
+    <script>
+        $(function () {
+$("#btn").click(function (){
+    $("#div1").animate({},300);
+/*left:"200px",
+width:"400px",
+height:"400px",
+fontSize:"64px",
+Color:"yellow"
+height:"+=100px"
+height:"toggle"*/
+$("#div1").animate({height:"500px"},1300);
+$("#div1").queue(function(){
+$(this).css("background-color","yellow");
+$(this).dequeue();
+});
+
+$("#div1").animate({width:"500px"},1300);
+$("#div1").queue(function(){
+$(this).css("background-color","green");
+$(this).dequeue();
+});
+$("#div1").animate({height:"200px"},1300);
+$("#div1").queue(function(){
+$(this).css("background-color","yellow");
+$(this).dequeue();
+});
+$("#div1").animate({width:"toggle"},1300);
+$("#div1").queue(function(){
+$(this).css("background-color","red");
+$(this).dequeue();
+});
+
+    
+   
+});
+      
+       
+});
+
+    </script>
+    
+        </body>
+</html>

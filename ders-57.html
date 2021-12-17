@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <title>JQuery Dersleri-57 || GET-SET ÖZELLİKLERİ </title>
+        <script src="jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body> 
+       <p id="p1">HTML</p>
+       <p id="p2"><b>CSS</b></p>
+       <p id="p3">Javascript</p>
+
+       <input id="t1" type="text" value="JQuery"/>
+       <br/><br/>
+       <a id="a1" href="ders-56.html" target="_blank">Ders-56</a> 
+       <br/><br/>
+       <button id="btn">Tıkla</button>
+          
+         
+             
+       <script>
+            $(function(){
+            $("#btn").click(function(){
+                alert($("#p3").text());
+            });
+    });
+
+       </script>
+        
+        </body>
+</html>
